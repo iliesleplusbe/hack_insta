@@ -1,0 +1,13 @@
+import os,sys,time,datetime
+from datetime import datetime
+
+os.system("clear")
+
+def aujourd_hui():
+   _maintenant = datetime.datetime.now()
+   _date = ""
+   _mois = str(randint(1, 12))
+   _annee_actuelle = str(_maintenant.year)
+   _annee = str(randint(int(_annee_actuelle[-2:]) + 1, int(_annee_actuelle[-2:]) + 6))
+   _date = _mois + "|" + _annee
+aujourd_hui()
