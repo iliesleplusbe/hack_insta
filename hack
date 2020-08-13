@@ -185,7 +185,7 @@ class Force_brute_insta(object):
     def __init__(self):
         _cls()
         print(logo_robot)
-        print("\033[1;97m╔══════════════════════════════════════════════╗
+        print("\033[1;97m╔══════════════════════════════════════════════╗")
         print("\033[1;97m║ \033[1;91m[\033[1;93m+\033[1;91m]\033[38;5;111m La bonne gestion dépend du logiciel VPN.")
         try:
             print("\033[1;97m║ \033[1;91m[\033[1;93m+\033[1;91m]\033[38;5;221m Veuillez l'utiliser avant d'exécuter l'outil.")
@@ -245,9 +245,8 @@ class Force_brute_insta(object):
                 with open("Faxelh.txt", "a") as sauves:
                     sauves.write("#Faxel\n" + utilisateur + ":" + pwd + "\n")
             else:
-                print("")
                 print("\n\033[1;91m[\033[1;93m+\033[1;91m]\033[1;97m Veuillez utiliser un VPN puissant, puis ressayez.")
-                print("\033[1;97m╔══════════════════════════════════════════════╗
+                print("\033[1;97m╔══════════════════════════════════════════════╗")
                 print("\033[1;97m║")
                 h = raw_input("\033[1;97m╚═\033[1;31m▶\033[38;5;136m Si vous avez changer de vpn taper\033[1;92m o\033[1;97m sinon taper\033[1;91m n \033[1;97m═╬══\033[1;91m► \033[38;5;245m" )
                 if h=="o" or h=="O":
