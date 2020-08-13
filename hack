@@ -189,7 +189,7 @@ class Force_brute_insta(object):
             print("\033[1;97m║ \033[1;91m[\033[1;93m+\033[1;91m]\033[38;5;221m Veuillez l'utiliser avant toute chose. \033[1;97m║")
             print("\033[1;97m║                                            ║")
             utilisateur = raw_input("\033[1;97m╚═\033[1;31m▶\033[38;5;245m Nom d'utilisateur cible instagram       \033[1;97m═╬══\033[1;91m► \033[1;95m" )
-            print("\033[1;97m║ \033[1;91m[\033[1;93m+\033[1;91m]\033[38;5;241m Wordliste par defaut \033[1;91m:\033[38;5;135m faxel.txt")
+            print("\033[1;97m║ \033[1;91m[\033[1;93m+\033[1;91m]\033[38;5;241m Wordliste par defaut \033[1;91m:\033[38;5;135m faxel.txt     \033[1;91m[\033[1;93m+\033[1;91m]\033[1;97m║")
             _wordliste  = raw_input("\033[1;97m╚═\033[1;31m▶\033[38;5;245m Entrer l'emplacement de la wordliste    \033[1;97m═╬══\033[1;91m► \033[1;96m" )
             print("\033[1;97m║")
             print("\033[1;97m╬═══╬═══╬═══╬═══╬═══╬═══╬══╬═══╬═══╬═══╬═══╬═══╬")        
