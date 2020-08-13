@@ -1,13 +1,13 @@
 #!/bin/bash
 #Faxel
 clear
-toilet -f pagga         SECURITY         | lolcat
-echo "Mise a jour de Security en cours........." | lolcat
+toilet -f pagga         hack_insta         | lolcat
+echo "Mise a jour de hack_insta en cours........." | lolcat
 echo ""
 git pull origin master
-echo "Mise à jour de Security terminer........." | lolcat
+echo "Mise à jour de hack_insta terminer........." | lolcat
 echo ""
-figlet -f small Security a jour!   | lolcat
+figlet -f small hack_insta a jour!   | lolcat
 echo ""
 toilet -f mono12 -F border Faxel | lolcat
 sleep 3
