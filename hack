@@ -244,23 +244,23 @@ class Force_brute_insta(object):
                 print("\033[1;91m[\033[1;93m*\033[1;91m]\033[1;97m "+ utilisateur + "\033[1;91m: \033[1;93m" + pwd + "\033[1;91m -->\033[1;97m Bon il faut vérifier")
                 with open("Faxelh.txt", "a") as sauves:
                     sauves.write("#Faxel\n" + utilisateur + ":" + pwd + "\n")
-            else:
-                print("\n\033[1;91m[\033[1;93m+\033[1;91m]\033[1;97m Veuillez utiliser un VPN puissant, puis ressayez.")
-                print("\033[1;97m╔════════════════════════════════════════════╗")
-                print("\033[1;97m║")
-                h = raw_input("\033[1;97m╚═\033[1;31m▶\033[38;5;136m Si vous avez changer de vpn taper\033[1;92m o\033[1;97m sinon taper\033[1;91m n \033[1;97m═╬══\033[1;91m► \033[38;5;245m" )
-                if h=="o" or h=="O":
-                    Force_brute_insta()
-                elif h=="n" or h=="N":
-                    quitter()
-                else:
-                    _cls()
-                    print(logo_robot)
-                    print("\n")
-                    os.system("xdg-open https://www.youtube.com/c/FASTERAXEL?sub_confirmation=1")
-                    raw_input("\033[1;97m Bye Mec, n'oublie pas de t'abonner et d'activer la cloche 🔔")
-                    quitter()
-####################################################################################################
+            #else:
+            #    print("\n\033[1;91m[\033[1;93m+\033[1;91m]\033[1;97m Veuillez utiliser un VPN puissant, puis ressayez.")
+            #    print("\033[1;97m╔════════════════════════════════════════════╗")
+            #    print("\033[1;97m║")
+            #    h = raw_input("\033[1;97m╚═\033[1;31m▶\033[38;5;136m Si vous avez changer de vpn taper\033[1;92m o\033[1;97m sinon taper\033[1;91m n \033[1;97m═╬══\033[1;91m► \033[38;5;245m" )
+            #    if h=="o" or h=="O":
+            #        Force_brute_insta()
+            #    elif h=="n" or h=="N":
+            #        quitter()
+            #    else:
+            #        _cls()
+            #        print(logo_robot)
+            #        print("\n")
+            #        os.system("xdg-open https://www.youtube.com/c/FASTERAXEL?sub_confirmation=1")
+            #        raw_input("\033[1;97m Bye Mec, n'oublie pas de t'abonner et d'activer la cloche 🔔")
+            #        quitter()
+#####################################################################################################
 ####################################################################################################            
 if __name__ == "__main__":
       security()
