@@ -45,7 +45,7 @@ if sys.version[0] in '2':
 ####################################################################################################           
 _cls()
 def aujourd_hui():
-   _maintenant = datetime.datetime.now()
+   _maintenant = datetime.now()#_maintenant.
    _date = ""
    _mois = str(randint(1, 12))
    _annee_actuelle = str(_maintenant.year)
