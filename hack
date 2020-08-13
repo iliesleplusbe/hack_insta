@@ -200,9 +200,8 @@ class Force_brute_insta(object):
             _save = open(_wordliste,'r')
             #with open(_wordliste, "r") as save:
             _passwordliste = _save.read().splitlines()
-            print("\033[1;97mIl y'a \033[1;97m"+len(_passwordliste)+"\033[1;97m dans votre wordliste.\n\033[1;97mPlace a la reconfiguration de la wordliste puis au piratage.\n")
             load("\033[1;91m[\033[1;92m@\033[1;91m]\033[38;5;245m Server\033[38;5;214m Faxel\033[38;5;241m...\033[48;5;0;38;5;192m")
-            print
+            print("\n")
         except IOError:
             print("\033[1;91m[\033[1;93m*\033[1;91m]\033[1;97m Wordliste introuvable.")
             time.sleep(2)
