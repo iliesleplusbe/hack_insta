@@ -43,7 +43,7 @@ if sys.version[0] in '2':
     exit("\n\t\033[1;91m[\033[1;93m*\033[1;91m]\033[1;97m Vous ne pouvez pas utiliser\033[1;95m python2\033[1;97m pour executer ce script\033[1;97m.\n\t\033[1;91m[\033[1;93m*\033[1;91m]\033[1;97m Veuillez l'executer en tapant \033[38;5;247mpython3\n")
 ####################################################################################################
 ####################################################################################################           
- _cls()
+_cls()
 def aujourd_hui():
    _maintenant = datetime.datetime.now()
    _date = ""
